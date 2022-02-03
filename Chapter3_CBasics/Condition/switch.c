@@ -19,8 +19,9 @@ void main()
         break;
     case 'F':
         printf("Better try again\n");
+        break;
     default:
-        printf("Invald Grade\n");
+        printf("Invalid Grade\n");
         break;
     }
     printf("Your grade is %c", grade);
