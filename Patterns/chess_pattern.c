@@ -1,10 +1,9 @@
 #include <stdio.h>
 void chess_pattern(int matrix)
 {
-    int i, j;
-    for (i = 1; i <= matrix; i++)
+    for (int i = 1; i <= matrix; i++)
     {
-        for (j = 1; j <= matrix; j++)
+        for (int j = 1; j <= matrix; j++)
         {
             if ((i + j) % 2 == 0)
             {
