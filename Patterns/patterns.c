@@ -1,14 +1,16 @@
 #include <stdio.h>
 void multiplicationTable();
-void triangularNumber();
+void floydTriangle();
 void triangularStar();
 void incrementNumbersTriangleLeft();
-void incrementNumbersTriangleRight();
+void incrementNumbersTriangleRight(); // only two loops
 void chessPattern();
 void triangularStarRight();
+void incrementNumbersInvertTriangleRight(); // uses three loops
+
 void main()
 {
-    triangularStarRight();
+    incrementNumbersInvertTriangleRight();
 }
 void triangularStar()
 {
@@ -54,7 +56,7 @@ void multiplicationTable()
         printf("\n");
     }
 }
-void triangularNumber()
+void floydTriangle()
 {
     /*
     1
@@ -190,5 +192,32 @@ void triangularStarRight()
         }
         printf("\n");
         n--;
+    }
+}
+void incrementNumbersInvertTriangleRight()
+{
+    /*
+
+    1 2 3 4 5
+      2 3 4 5
+        3 4 5
+          4 5
+            5
+
+    */
+    int row;
+    printf("How many rows You want\n");
+    scanf("%d", &row);
+    for (int i = 1; i <= row; i++)
+    {
+        for (int j = 1; j <= i - 1; j++)
+        {
+            printf("  ");
+        }
+        for (int k = i; k <= row; k++)
+        {
+            printf("%2d", k);
+        }
+        printf("\n");
     }
 }
