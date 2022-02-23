@@ -3,7 +3,9 @@
 
 This repo mainly consists the learning of C Programming.
 
-
+## 🚀 About Me
+I'm student of Bachlelor in Computer Application in Lalitpur Engineering College.
+Who loves Technology and Problem Solving.
 
 ## Contents
 
@@ -20,6 +22,3 @@ This repo mainly consists the learning of C Programming.
 - Array
 
 
-## 🚀 About Me
-I'm student of Bachlelor in Computer Application in Lalitpur Engineering College.
-Who loves Technology and Problem Solving.
