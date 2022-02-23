@@ -7,10 +7,11 @@ void incrementNumbersTriangleRight(); // only two loops
 void chessPattern();
 void triangularStarRight();
 void incrementNumbersInvertTriangleRight(); // uses three loops
+void decrementNumbersInvertTriangleRight(); // uses three loops
 
 void main()
 {
-    incrementNumbersInvertTriangleRight();
+    decrementNumbersInvertTriangleRight();
 }
 void triangularStar()
 {
@@ -195,6 +196,7 @@ void triangularStarRight()
     }
 }
 void incrementNumbersInvertTriangleRight()
+
 {
     /*
 
@@ -215,6 +217,33 @@ void incrementNumbersInvertTriangleRight()
             printf("  ");
         }
         for (int k = i; k <= row; k++)
+        {
+            printf("%2d", k);
+        }
+        printf("\n");
+    }
+}
+void decrementNumbersInvertTriangleRight()
+{
+    /*
+
+      5 4 3 2 1
+        4 3 2 1
+          3 2 1
+            2 1
+              1
+
+    */
+    int row;
+    printf("How many rows You want\n");
+    scanf("%d", &row);
+    for (int i = row; i >= 1; i--)
+    {
+        for (int j = row; j >= i + 1; j--)
+        {
+            printf("  ");
+        }
+        for (int k = i; k >= 1; k--)
         {
             printf("%2d", k);
         }
