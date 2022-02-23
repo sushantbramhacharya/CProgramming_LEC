@@ -1,3 +1,11 @@
+/*
+
+W B W B
+B W B W
+W B W B
+B W B W
+
+*/
 #include <stdio.h>
 void chess_pattern(int matrix)
 {

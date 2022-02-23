@@ -1,3 +1,12 @@
+/*
+
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+ 
+ */
 #include <stdio.h>
 void multiplicationTable()
 {
@@ -15,7 +24,7 @@ void multiplicationTable()
 }
 void triangularNumber()
 {
-    
+
     int i, j, num = 1, triangular_number;
     printf("enter the number \n ");
     scanf("%d", &triangular_number);
