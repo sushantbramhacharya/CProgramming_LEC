@@ -9,10 +9,10 @@ void triangularStarRight();
 void incrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersTriangleRight();       // only two loops
-void alphabetPattern();
+void incrementDecrementPatternNumber();
 void main()
 {
-    alphabetPattern();
+    incrementDecrementPatternNumber();
 }
 void triangularStar()
 {
@@ -276,8 +276,8 @@ void alphabetPattern()
 {
     int row;
     printf("Enter the numbers of row:\n");
-    scanf("%d",&row);
-    for(int i=1;i<=row;i++)
+    scanf("%d", &row);
+    for (int i = 1; i <= row; i++)
     {
         /*
         A
@@ -286,13 +286,37 @@ void alphabetPattern()
         a       b       c       d
         A       B       C       D       E
         */
-        for(int j=65;j<=65+i-1;j++)
+        for (int j = 65; j <= 65 + i - 1; j++)
         {
-            if(i%2!=0)
-                printf("%c\t",j);
+            if (i % 2 != 0)
+                printf("%c\t", j);
             else
-                printf("%c\t",j+32);
+                printf("%c\t", j + 32);
         }
         printf("\n");
+    }
+}
+void incrementDecrementPatternNumber()
+{
+    int top_num, n = 0;
+    printf("Enter the numbers of top number:\n");
+    scanf("%d", &top_num);
+    for (int i = top_num; i >= 1; i--)
+    {
+        for (int j = 1; j <= i - 1; j++)
+        {
+            printf(" ");
+        }
+        for (int k = i; k <= top_num + n; k++)
+        {
+            if (k == i)
+                printf("%d", i);
+            else if (k == top_num + n)
+                printf("%d", k);
+            else
+                printf(" ");
+        }
+        printf("\n");
+        n++;
     }
 }
