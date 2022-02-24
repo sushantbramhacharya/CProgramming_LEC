@@ -298,6 +298,12 @@ void alphabetPattern()
 }
 void incrementDecrementPatternNumber()
 {
+    /*
+    5
+   4 6
+  3   7
+ 2     8
+1       9*/
     int top_num, n = 0;
     printf("Enter the numbers of top number:\n");
     scanf("%d", &top_num);
