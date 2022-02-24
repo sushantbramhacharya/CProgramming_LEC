@@ -9,10 +9,10 @@ void triangularStarRight();
 void incrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersTriangleRight();       // only two loops
-
+void alphabetPattern();
 void main()
 {
-    decrementNumbersTriangleRight();
+    alphabetPattern();
 }
 void triangularStar()
 {
@@ -249,6 +249,7 @@ void decrementNumbersInvertTriangleRight()
     }
 }
 void decrementNumbersTriangleRight()
+
 {
     int n, row;
     printf("How many rows You want\n");
@@ -269,5 +270,29 @@ void decrementNumbersTriangleRight()
         }
         printf("\n");
         n++;
+    }
+}
+void alphabetPattern()
+{
+    int row;
+    printf("Enter the numbers of row:\n");
+    scanf("%d",&row);
+    for(int i=1;i<=row;i++)
+    {
+        /*
+        A
+        a       b
+        A       B       C
+        a       b       c       d
+        A       B       C       D       E
+        */
+        for(int j=65;j<=65+i-1;j++)
+        {
+            if(i%2!=0)
+                printf("%c\t",j);
+            else
+                printf("%c\t",j+32);
+        }
+        printf("\n");
     }
 }
