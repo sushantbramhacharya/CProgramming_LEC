@@ -12,9 +12,10 @@ void decrementNumbersTriangleRight();       // only two loops
 void incrementDecrementPatternNumber();
 void squareStarPattern();
 void rectangleStarPattern();
+void pyramidPattern();
 void main()
 {
-    rectangleStarPattern();
+    pyramidPattern();
 }
 void triangularStar()
 {
@@ -355,11 +356,11 @@ void squareStarPattern()
 void rectangleStarPattern()
 {
     /*
-    * * * * * * * 
-    *           *
-    *           *
-    * * * * * * *
-    */
+     * * * * * * *
+     *           *
+     *           *
+     * * * * * * *
+     */
     int row, column;
     printf("Enter the numbers of row and column:\n");
     scanf("%d%d", &row, &column);
@@ -371,6 +372,31 @@ void rectangleStarPattern()
                 printf("* ");
             else
                 printf("  ");
+        }
+        printf("\n");
+    }
+}
+void pyramidPattern()
+{
+    int row, n;
+    printf("Enter the numbers of row :\n");
+    scanf("%d", &row);
+    n = 1;
+    for (int i = 1; i <= row; i++)
+    {
+        for (int j = i; j <= row - 1; j++)
+        {
+            printf("  ");
+        }
+        n = i;
+        for (int k = 1; k <= i; k++)
+        {
+            printf(" %d", n++);
+        }
+        n--;
+        for (int l = 1; l <= i - 1; l++)
+        {
+            printf(" %d", --n);
         }
         printf("\n");
     }
