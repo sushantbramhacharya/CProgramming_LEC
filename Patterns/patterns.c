@@ -10,10 +10,11 @@ void incrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersInvertTriangleRight(); // uses three loops
 void decrementNumbersTriangleRight();       // only two loops
 void incrementDecrementPatternNumber();
-void squareStarProgram();
+void squareStarPattern();
+void rectangleStarPattern();
 void main()
 {
-    squareStarProgram();
+    rectangleStarPattern();
 }
 void triangularStar()
 {
@@ -327,16 +328,46 @@ void incrementDecrementPatternNumber()
         n++;
     }
 }
-void squareStarProgram()
+void squareStarPattern()
 {
+    /*
+     * * * * *
+     *       *
+     *       *
+     *       *
+     * * * * *
+     */
     int row;
     printf("Enter the numbers of row:\n");
     scanf("%d", &row);
-    for(int i=1;i<=row;i++)
+    for (int i = 1; i <= row; i++)
     {
-        for(int j=1;j<=row;j++)
+        for (int j = 1; j <= row; j++)
         {
-            if(i==1||i==row||j==1||j==row)
+            if (i == 1 || i == row || j == 1 || j == row)
+                printf("* ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
+}
+void rectangleStarPattern()
+{
+    /*
+    * * * * * * * 
+    *           *
+    *           *
+    * * * * * * *
+    */
+    int row, column;
+    printf("Enter the numbers of row and column:\n");
+    scanf("%d%d", &row, &column);
+    for (int i = 1; i <= row; i++)
+    {
+        for (int j = 1; j <= column; j++)
+        {
+            if (i == 1 || i == row || j == 1 || j == column)
                 printf("* ");
             else
                 printf("  ");
