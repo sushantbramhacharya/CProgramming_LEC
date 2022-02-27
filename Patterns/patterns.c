@@ -12,10 +12,11 @@ void decrementNumbersTriangleRight();       // only two loops
 void incrementDecrementPatternNumber();
 void squareStarPattern();
 void rectangleStarPattern();
-void pyramidPattern();
+void pyramidPatternOne();
+void diamondPatternOne();
 void main()
 {
-    pyramidPattern();
+    diamondPatternOne();
 }
 void triangularStar()
 {
@@ -376,7 +377,7 @@ void rectangleStarPattern()
         printf("\n");
     }
 }
-void pyramidPattern()
+void pyramidPatternOne()
 {
     /*
          1
@@ -405,6 +406,57 @@ void pyramidPattern()
         {
             printf(" %d", --n);
         }
+        printf("\n");
+    }
+}
+void diamondPatternOne()
+{
+    int center_number, row, n = 1;
+    printf("Enter the center Number: ");
+    scanf("%d", &center_number);
+    row = center_number * 2 - 1;
+    for (int i = 1; i <= row; i++)
+    {
+        /*
+        5
+      4 5 6
+    3 4 5 6 7
+  2 3 4 5 6 7 8
+1 2 3 4 5 6 7 8 9
+  2 3 4 5 6 7 8
+    3 4 5 6 7
+      4 5 6
+        5
+        */
+        for (int j = 1; j <= row; j++)
+        {
+            if (i <= center_number)
+            {
+                if (j <= center_number - i)
+                {
+                    printf("  ");
+                }
+                else if (j >= center_number + i)
+                {
+                    printf(" ");
+                }
+                else
+                {
+                    printf("%d ", j);
+                }
+            }
+            else
+            {
+                if (j <= n)
+                    printf("  ");
+                else if (j > row - n)
+                    printf("  ");
+                else
+                    printf("%d ", j);
+            }
+        }
+        if (i > center_number)
+            n++;
         printf("\n");
     }
 }
