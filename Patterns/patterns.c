@@ -14,9 +14,10 @@ void squareStarPattern();
 void rectangleStarPattern();
 void pyramidPatternOne();
 void diamondPatternOne();
+void diamondPatternTwo();
 void main()
 {
-    diamondPatternOne();
+    diamondPatternTwo();
 }
 void triangularStar()
 {
@@ -453,6 +454,83 @@ void diamondPatternOne()
                     printf("  ");
                 else
                     printf("%d ", j);
+            }
+        }
+        if (i > center_number)
+            n++;
+        printf("\n");
+    }
+}
+void diamondPatternTwo()
+{
+    /*
+        1
+      1 2 1
+    1 2 3 2 1
+  1 2 3 4 3 2 1
+1 2 3 4 5 4 3 2 1
+  1 2 3 4 3 2 1
+    1 2 3 4 3
+      1 2 5
+        1
+    */
+    int center_number, row, n = 1, num_increment, num_decrement;
+    printf("Enter the center Number: ");
+    scanf("%d", &center_number);
+    row = center_number * 2 - 1;
+    for (int i = 1; i <= row; i++)
+    {
+        num_increment = 1;
+        num_decrement = 1;
+        for (int j = 1; j <= row; j++)
+        {
+            if (i <= center_number)
+            {
+                if (j <= center_number - i)
+                {
+                    printf("  ");
+                }
+                else if (j >= center_number + i)
+                {
+                    printf(" ");
+                }
+                else
+                {
+                    if (j <= center_number)
+                    {
+                        printf("%d ", num_increment);
+                        num_increment++;
+                    }
+                    else
+                    {
+                        printf("%d ", i - num_decrement);
+                        num_decrement++;
+                    }
+                }
+            }
+            else
+            {
+                if (j <= n)
+                {
+                    printf("  ");
+                }
+                else if (j > row - n)
+                {
+                    printf("  ");
+                }
+                else
+                {
+                    if (j <= center_number)
+                    {
+                        printf("%d ", num_increment);
+                        num_increment++;
+                    }
+                    else
+                    {
+                        printf("%d ", i - num_decrement - 2);
+                        num_decrement++;
+                    }
+                }
             }
         }
         if (i > center_number)
