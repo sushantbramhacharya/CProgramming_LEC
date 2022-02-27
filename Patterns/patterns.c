@@ -15,9 +15,10 @@ void rectangleStarPattern();
 void pyramidPatternOne();
 void diamondPatternOne();
 void diamondPatternTwo();
+void plusPattern();
 void main()
 {
-    diamondPatternTwo();
+    plusPattern();
 }
 void triangularStar()
 {
@@ -536,5 +537,29 @@ void diamondPatternTwo()
         if (i > center_number)
             n++;
         printf("\n");
+    }
+}
+void plusPattern()
+{
+    int row;
+    printf("Enter the numbers of row:\n");
+    scanf("%d", &row);
+    if (row % 2 == 0)
+    {
+        printf("Enter Valid number again");
+    }
+    else
+    {
+        for (int i = 1; i <= row; i++)
+        {
+            for (int j = 1; j <= row; j++)
+            {
+                if (j == (row / 2) + 1 || i == (row / 2) + 1)
+                    printf("* ");
+                else
+                    printf("  ");
+            }
+            printf("\n");
+        }
     }
 }
