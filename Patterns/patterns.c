@@ -541,6 +541,15 @@ void diamondPatternTwo()
 }
 void plusPattern()
 {
+    /*
+
+    *
+    *
+* * * * *
+    *
+    *
+
+    */
     int row;
     printf("Enter the numbers of row:\n");
     scanf("%d", &row);
