@@ -14,3 +14,6 @@ In this type of sorting we sort by checking
     - Sorted array only index 0(at 1st iteration)
     - Unsorted array rest of all
 - Continously checked and shifted right to get forted array
+# Linear Search
+- This is simplest searching algorithms.
+- It searches array Linearly.
