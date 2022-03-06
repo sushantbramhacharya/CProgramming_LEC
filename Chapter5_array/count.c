@@ -2,12 +2,12 @@
 #include<stdio.h>
 int sum(int array[5])
 {
-    int sum=0,count=0;
-    for(int i=0;i<5;i++)
+    int sum = 0, count = 0;
+    for(int i = 0; i < 5; i++)
     {
-        if(array[i]%7==0&&array[i]%5!=0)
+        if(array[i] % 7 == 0 && array[i] % 5 != 0)
         {
-            sum=sum+array[i];
+            sum = sum + array[i];
             count++;
         }
     }
@@ -16,12 +16,12 @@ int sum(int array[5])
 }
 void main()
 {
-    int array[5],sumOfNumbers;
+    int array[5], sumOfNumbers;
     printf("Enter the numbers : ");
-    for(int i=0;i<5;i++)
+    for(int i = 0; i < 5; i++)
     {
-        scanf("%d",&array[i]);
+        scanf("%d", &array[i]);
     }
-    sumOfNumbers=sum(array);
-    printf("The sum is %d",sumOfNumbers);
+    sumOfNumbers = sum(array);
+    printf("The sum is %d", sumOfNumbers);
 }
