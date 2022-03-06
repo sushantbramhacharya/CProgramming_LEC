@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define PI 3.1415
+cosnt float PI = 3.1415
 void main()
 {
     float area, radius, circumf;
