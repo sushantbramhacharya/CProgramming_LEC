@@ -9,3 +9,8 @@ In this type of sorting we sort by checking
 - In first Iteration of(i)
     - Is 1st element greater than elements behind it.
 - Like wise the other iterations does the same until array is sorted
+# Insertion sort
+- Divided into two sub array
+    - Sorted array only index 0(at 1st iteration)
+    - Unsorted array rest of all
+- Continously checked and shifted right to get forted array

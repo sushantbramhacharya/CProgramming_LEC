@@ -1,6 +1,7 @@
 #include <stdio.h>
 int array[10] = {3, 2, 1, 4, 4, 5, 6, 3, 7, 4};
-void selectionSort(int n)
+int n = 10;
+void selectionSort()
 {
     int i, j, temp;
     for (int i = 0; i < n - 1; i++)
@@ -16,7 +17,7 @@ void selectionSort(int n)
         }
     }
 }
-void bubbleSort(int n)
+void bubbleSort()
 {
     int i, j, temp;
     for (int i = 0; i < n - 1; i++)
@@ -32,7 +33,22 @@ void bubbleSort(int n)
         }
     }
 }
-void displayArray(int n)
+void insertionSort()
+{
+    int temp, j;
+    for (int i = 1; i < n; i++)
+    {
+        temp = array[i];
+        j = i - 1;
+        while (array[j] > temp && j >= 0)
+        {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j+1]=temp;
+    }
+}
+void displayArray()
 {
     printf("The sorted array is :\n");
     for (int i = 0; i < n; i++)
@@ -49,19 +65,22 @@ void main()
     //     scanf("%d", &array[i]);
     // }
 ReEnter:
-    printf("Which Algorithms to use\n1.Selection\n2.Bubble\n-->");
+    printf("Which Algorithms to use\n1.Selection\n2.Bubble\n3.Insertion\n-->");
     scanf("%d", &algo);
     switch (algo)
     {
     case 1:
-        selectionSort(n);
+        selectionSort();
         break;
     case 2:
-        bubbleSort(n);
+        bubbleSort();
+        break;
+    case 3:
+        insertionSort();
         break;
     default:
         printf("Use valid command : ");
         goto ReEnter;
     }
-    displayArray(n);
+    displayArray();
 }
