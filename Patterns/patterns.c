@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include "patterns.h"
-void main()
-{
-    plusPattern();
-}
+
 void triangularStar()
 {
     /*
