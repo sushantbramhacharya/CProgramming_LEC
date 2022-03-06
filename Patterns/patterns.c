@@ -520,6 +520,7 @@ void diamondPatternTwo()
         printf("\n");
     }
 }
+
 void plusPattern()
 {
     /*
@@ -532,24 +533,25 @@ void plusPattern()
 
     */
     int row;
-    printf("Enter the numbers of row:\n");
-    scanf("%d", &row);
-    if (row % 2 == 0)
+    while(1)
     {
+        printf("Enter the numbers of row(even):\n");
+        scanf("%d", &row);
+        if(row % 2 == 0)
+        {
+            break;
+        }
         printf("Enter Valid number again");
     }
-    else
+    for (int i = 1; i <= row; i++)
     {
-        for (int i = 1; i <= row; i++)
+        for (int j = 1; j <= row; j++)
         {
-            for (int j = 1; j <= row; j++)
-            {
-                if (j == (row / 2) + 1 || i == (row / 2) + 1)
-                    printf("* ");
-                else
-                    printf("  ");
-            }
-            printf("\n");
+            if (j == (row / 2) + 1 || i == (row / 2) + 1)
+                printf("* ");
+            else
+                printf("  ");
         }
+        printf("\n");
     }
 }
