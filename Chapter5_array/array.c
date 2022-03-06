@@ -22,9 +22,17 @@ void main()
 void int_arr()
 {
     int numbers[20], size;
-    printf("Enter the size of the array : ");
-    scanf("%d", &size);
-
+    while(1)
+    {
+        printf("Enter the size of the array : ");
+        scanf("%d", &size);
+        if(size >= 1 || size <= 20)
+        {
+            break;
+        }
+        printf("Type a value between 1 and 20\n")
+    }
+        
     for (int i = 0; i < size; i++)
     {
         printf("Enter the %d index number : \n", i);
