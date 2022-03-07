@@ -6,7 +6,7 @@ void main()
     {
         for (int j = 0; j < 2; j++)
         {
-            printf("Enter the temprature of the city for %d day %dth temprature : ", i + 1, j + 1);
+            printf("Enter the temprature of the city for %d day %d city : ", i + 1, j + 1);
             scanf("%d", &temp[i][j]);
         }
     }
@@ -14,7 +14,7 @@ void main()
     {
         for (int j = 0; j < 2; j++)
         {
-            printf("The temprature of %d day %dth temparture is [%d]\n", i + 1, j + 1, temp[i][j]);
+            printf("The temprature of %d day %d city is [%d]\n", i + 1, j + 1, temp[i][j]);
         }
     }
 }
