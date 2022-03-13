@@ -1,9 +1,15 @@
 # Generation of the computer
 - ## First Generation Computer
-- Computers like UNIVAC
-- Uses Vaccumn tubes as main technonlogy
-- Covers large Area
-- Slow processing Power than other Generations
+    - Computers like UNIVAC
+    - Uses Vaccumn tubes as main technonlogy
+    - Covers large Area
+    - Slow processing Power than other Generations
+- ## Second Generation Computer
+    - Uses Transistors as main technonlogy
+    - Compact than Firs Gens
+    - Faster than First Gen Computer
+
+
 # Difference between compiler and interpreter
 ## Compiler
 - It scans whole source code and compile it into object code
