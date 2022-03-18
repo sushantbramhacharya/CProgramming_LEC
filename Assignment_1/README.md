@@ -15,6 +15,13 @@
     - Small Size.
     - Multiple Transistors and electronic Component were Intergreted in Single Chip
     - IBM 370
+- ## Forth Generation Computer
+    - More Intergration were used like LSI VLSI etc
+    - More Electronic component were Intergreted In same Chip:
+        - VLSI (Very Large Scale Intergration) from 10k to 100k chips, gates and transistors.
+        - Uses Semi Conductor Technology.(Silicon)
+    - Still Used in Mordern Days.
+    - eg IBM PC, IBM Compatibles, Macintosh etc.
 
 
 # Difference between compiler and interpreter
