@@ -6,8 +6,15 @@
     - Slow processing Power than other Generations
 - ## Second Generation Computer
     - Uses Transistors as main technonlogy
-    - Compact than Firs Gens
+    - Compact than First Gens
     - Faster than First Gen Computer
+- ## Third Gen Computer
+    - Intergreted Circuit were used.
+    - Modern Language started getting used like C Pascal FORTRAN.
+    - Faster.
+    - Small Size.
+    - Multiple Transistors and electronic Component were Intergreted in Single Chip
+    - IBM 370
 
 
 # Difference between compiler and interpreter
