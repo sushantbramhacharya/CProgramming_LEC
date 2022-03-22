@@ -47,6 +47,15 @@ int HCF(int n1,int n2)
     }
     return HCF;
 }
+long int factorial(int num)
+{
+    long int fact = 1;
+    for (int i = num; i >= 1; i--)
+    {
+        fact *= i;
+    }
+    return fact;
+}
 void main()
 {
     // ADD
@@ -85,9 +94,14 @@ void main()
     // }
 
     //HCF LCM
-    int n1, n2;
+    // int n1, n2;
+    // printf("Enter two integers: ");
+    // scanf("%d %d", &n1, &n2);
+    // printf("%d is HCF and %d is LCM.",HCF(n1,n2),LCM(n1,n2,HCF(n1,n2)));
 
-    printf("Enter two integers: ");
-    scanf("%d %d", &n1, &n2);
-    printf("%d is HCF and %d is LCM.",HCF(n1,n2),LCM(n1,n2,HCF(n1,n2)));
+    //Factorial
+    int num;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    printf("The Factorial of %d is %ld",num,factorial(num));
 }
