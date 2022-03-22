@@ -33,7 +33,20 @@ int primeChecker(int num)
     }
     return 2;
 }
-
+int LCM(int n1,int n2,int hcf)
+{
+    return (n1*n2)/hcf;
+}
+int HCF(int n1,int n2)
+{
+    int HCF;
+    for(int i=1; i <= n1 && i <= n2; i++)
+    {
+        if(n1%i==0 && n2%i==0)
+            HCF= i;
+    }
+    return HCF;
+}
 void main()
 {
     // ADD
@@ -55,19 +68,26 @@ void main()
     // tax(salary, n);
 
     //Prime Checker
-    int num;
-    printf("Enter the number : ");
-    scanf("%d",&num);
-    switch(primeChecker(num))
-    {
-        case 0:
-            printf("Neither Prime nor Composite.");
-            break;
-        case 1:
-            printf("Its composite");
-            break;
-        case 2:
-            printf("Its Prime");
-            break;
-    }
+    // int num;
+    // printf("Enter the number : ");
+    // scanf("%d",&num);
+    // switch(primeChecker(num))
+    // {
+    //     case 0:
+    //         printf("Neither Prime nor Composite.");
+    //         break;
+    //     case 1:
+    //         printf("Its composite");
+    //         break;
+    //     case 2:
+    //         printf("Its Prime");
+    //         break;
+    // }
+
+    //HCF LCM
+    int n1, n2;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &n1, &n2);
+    printf("%d is HCF and %d is LCM.",HCF(n1,n2),LCM(n1,n2,HCF(n1,n2)));
 }
