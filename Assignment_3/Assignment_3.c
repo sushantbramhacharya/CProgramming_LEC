@@ -56,6 +56,17 @@ long int factorial(int num)
     }
     return fact;
 }
+void range(int a,int b)
+{
+    printf("The number in the range divisible by 3 are :");
+    for(int i=a;i<=b;i++)
+    {
+        if(i%3==0)
+        {
+            printf(" %d",i);
+        }
+    }
+}
 void main()
 {
     // ADD
@@ -100,8 +111,14 @@ void main()
     // printf("%d is HCF and %d is LCM.",HCF(n1,n2),LCM(n1,n2,HCF(n1,n2)));
 
     //Factorial
-    int num;
-    printf("Enter the number : ");
-    scanf("%d",&num);
-    printf("The Factorial of %d is %ld",num,factorial(num));
+    // int num;
+    // printf("Enter the number : ");
+    // scanf("%d",&num);
+    // printf("The Factorial of %d is %ld",num,factorial(num));
+
+    //Range
+    int a,b;
+    printf("Enter 2 numbers for range : ");
+    scanf("%d%d",&a,&b);
+    range(a,b);
 }
