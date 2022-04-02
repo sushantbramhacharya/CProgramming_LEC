@@ -5,6 +5,7 @@
 - It's library functions are defined in STDLIB.H.
 - Some of library Functions are:
     - calloc();
+        - Defaults value to 0;
     - malloc();
         - Stands for memory allocation.
         - Reserves a block of memory of specified number of bytes and returns a pointer of void which can be casted into pointer any form.
